@@ -38,18 +38,10 @@ Usage
         // IP has changed
     });
 
-    dyndns.on('interface:up', function () {
-        // Networkinterface up
-    });
-
-    dyndns.on('interface:down', function () {
-        // Networkinterface down
-    });
-
     dyndns.on('update:success', function () {
         // Update at services succeeded
     });
 
-    dyndns.on('update:error', function (err) {
+    dyndns.on('error', function (err) {
         // Update at services failed
     });
