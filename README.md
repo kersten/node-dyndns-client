@@ -23,16 +23,16 @@ Usage
 -----
     var DynDNSClient = require("node-dyndns-client"),
         dyndns = new DynDNSClient({
-            url: "http://[USERNAME]:[PASSWORD]@members.dyndns.org/nic/update?hostname=[HOSTNAME]&myip=[IP]",
-            hostname: [
+            url                 : "http://[USERNAME]:[PASSWORD]@members.dyndns.org/nic/update?hostname=[HOSTNAME]&myip=[IP]",
+            hostname            : [
                 "test.dyndns.org",
                 "customtest.dyndns.org"
             ],
-            username: 'username',
-            password: 'password',
-            interface: 'ppp0',
-            protocol: 'ipv4',
-            check: 60
+            username            : 'username',
+            password            : 'password',
+            network_interface   : 'ppp0',
+            protocol            : 'ipv4',
+            check               : 60
         });
 
     dyndns.on('IP:changed', function (newIP, oldIP) {
