@@ -1,5 +1,5 @@
 {
-    "version"    : "0.2",
+    "version"    : "0.2.0",
     "name"       : "node-dyndns-client",
     "description": "A dynamic dns IP updater",
     "homepage"   : "http://github.com/kersten/node-dyndns-client",
