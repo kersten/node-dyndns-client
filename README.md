@@ -23,14 +23,14 @@ Usage
 -----
     var DynDNSClient = require("node-dyndns-client"),
         dyndns = new DynDNSClient({
-            url                 : "http://[USERNAME]:[PASSWORD]@members.dyndns.org/nic/update?hostname=[HOSTNAME]&myip=[IP]",
+            url                 : "http://members.dyndns.org/nic/update",
             hostname            : [
                 "test.dyndns.org",
                 "customtest.dyndns.org"
             ],
             username            : 'username',
             password            : 'password',
-            network_interface   : 'ppp0',
+            network_interface   : 'en0',
             protocol            : 'ipv4',
             check               : 60
         });
